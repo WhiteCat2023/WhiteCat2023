@@ -1,0 +1,105 @@
+import os, time
+
+login_info = [("befa.canaya.swu@phinmaed.com", "123456", "Berndt Dennis"),
+              ("jira.bernardo.swu@phinmaed.com", "123456", "Bernardo"),
+              ("roge.faciolan.swu@phinmaed.com", "123456", "Roge")]
+attempts = 0
+while True:
+    for username, password, nickname in login_info:
+        print("\033[31m========= =============================================== =========\033[0m")
+        print("\033[31m========= =============== PERIODICAL EXAM =============== =========\033[0m")
+        print("\033[31m========= ====== FRIENDLY REMINDER: WAG MO SUBOKAN ====== =========\n========= ======= MAG CHEAT MASISIRA ANG BUHAY MO ======= =========\033[0m")
+        print("\033[31m========= =============================================== =========\033[0m")
+        print()
+        user = input("\t\tUSERNAME: ")
+        passw = input("\t\tPASSWORD: ")
+        os.system("cls")    
+        if user == username and passw == password:
+            print(f"\033[32m========== WELCOME {nickname} ==========\033[0m")
+            time.sleep(1)
+            os.system("cls")
+            score = 30
+            counter = 0
+
+            QUESTIONS = [("1.It enables a particular set of conditions to be executed repeatedly until acondition is satisfied.\n", "for loop"),
+                        ("2. It enables a particular set of conditions to be executed repeatedly until a condition is satisfied?\n", "for loop"),
+                        ("3. A function that either take a single number and behaves like a list?\n", "range"),
+                        ("4. The statement used inside the loop to exit out of the loop?\n", "break statement"),
+                        ("5. It is a declaration that enables you to ignore the most recent version of any loop?\n", "continue statement"),
+                        ("6. Pass statement that is considered a no-operation statement?\n", "true"),
+                        ("7. Loop Controls Statements Control statements in a loop change the order of execution.\n", "false"),
+                        ("8. The Continue Statement is used within the loop to exit the loop.\n", "false"),
+                        ("9. The Pass Statement is regarded as a no-operation statement, says that it consumes the execution cycle like a legal Python statement, but nothing actually happens. When the command pass is executed.\n", "true"),
+                        ("10. WHILE LOOP enables a specific set of conditions to be repeated until a criterion has been met.\n", "false"),
+                        ("11. Iterating by sequence index enables a specific set of conditions to be repeated until a criterion has been met.\n", "true"),
+                        ("12. The continue statement inserted inside the loop to end it.\n", "false"),
+                        ("13. Python programming language allows using one loop inside another loop is called nested loop.\n", "true"),
+                        ("14. While Loop is used for sequential traversal.\n", "false"),
+                        ("15. Brake statement is useful when we want to terminate the loop as soon the condition is fulfilled instead of doing the remaining iterations.\n", "false"),
+                        ("16. Python does not support having an else statement associated with a loop statement.\n", "false"),
+                        ("17. 1. A loop that is never finished is known as an infinite loop, it means the looping condition is always true, so that loop never terminates. An infinite loop is very useful in embedded systems.\n", "true"),
+                        ("18. If the else statement is used with a for loop, the else statement is executed when the loop has exhausted iterating the list.\n", "true"),
+                        ("19. If the else statement is used with a while loop, the else statement is executed when the condition becomes false.\n", "true"),
+                        ("20. Python programming language allows using one loop inside another loop.\n", "false"),
+                        ("21. A for loop enables a particular set of conditions to be executed repeatedly until a condition is satisfied.\n", "false"),
+                        ("22. Using a for loop you can perform this action in three statements.\n", "false"),
+                        ("23. It can also be used in many advanced scenarios depending on the problem statement.\n", "true"),
+                        ("24. It has the ability to iterate over the items of any sequence, such as a list or a string.\n", "true"),
+                        ("25. If a sequence contains an expression list, it is evaluated first.\n", "true"),
+                        ("26. An alternative way of iterating through each item is by index offset into the sequence itself.\n", "false"),
+                        ("27. Brake statement is useful when we want to terminate the loop as soon the condition is fulfilled instead of doing the remaining iterations.\n", "false"),
+                        ("28. Python does not support having an else statement associated with a loop statement.\n", "false"),
+                        ("29. While Loop is used for sequential traversal.\n", "false"),
+                        ("30. Loop Controls Statements Control statements in a loop change the order of execution.\n", "false"),
+                            ]
+                        
+            print("\033[32m========== ITE 260 ==========\033[0m")
+            for question, correct_answer in QUESTIONS:
+                answer = input(f"{question} \033[34mANSWER: \033[0m")
+                counter +=1
+                            
+                if answer.lower() == correct_answer:
+                    print("\033[33mCorrect!\033[0m")
+                else:
+                    print(f"\033[31mThe answer is {correct_answer}, not {answer}\033[0m")
+                    score -=1
+                if counter == 10:
+                        print()
+                        print("\033[32m========== MAT 152 ==========\033[0m")
+                        print()
+                if counter == 20:
+                        print()
+                        print("\033[32m========== ITE 366 ==========\033[0m")
+                        print()
+
+            print(f"SCORE: {score}")
+            ave = score / 3
+            print(round(ave))
+            if score >= 10:
+                print(f"You've PASS with a score of {score} and with an average of {round(ave)}")
+            elif score >= 16:
+                 print(f"Great score of {score} and with an average of {round(ave)}")
+            elif score >=21:
+                 print(f"Wow! You got a high score of {score} and with an average of {round(ave)}")
+            elif score ==30:
+                 print(f"Perfect score of {score} and with an average of {round(ave)}")
+            else:
+                print(f"You've FAILED with a score of {score} and with an average of {round(ave)}")
+                exit()           
+
+    
+        else:
+            print("\033[31mINVALID ACCOUNT!\033[0m")
+            time.sleep(0.5)
+            os.system("cls")
+            attempts += 1
+            if attempts == 5:
+                print("CANT LOGIN ANYMORE YOU'VE PAST THE 5 ATTEMPT LIMIT!")
+                exit()
+
+
+  
+
+                
+
+

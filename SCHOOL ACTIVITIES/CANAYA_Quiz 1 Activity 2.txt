@@ -1,0 +1,144 @@
+II. Analyze the codes below, write the output on the space provided. (10 points each) 
+(1) 
+name = input("Enter your mother’s name:") 
+age = input("Enter your mother’s age:") 
+print ("Your mother’s name is: " + name); 
+print ("and your mother’s age is:" + str(age)) 
+
+✔ SOLUTION: ✔
+
+name = input("Enter your mother’s name:") 
+age = input("Enter your mother’s age:") 
+print ("Your mother’s name is: " + name) 
+print ("and your mother’s age is:" + str(age))
+=========================================================================================
+(2) 
+a = 60  
+b = 13  
+c = 0 
+c = a & b;  
+print "The value of c is ", c 
+c = a | b;  
+print "The value of c is ", c 
+c = a ^ b;  
+print "The value of c is ", c 
+c = ~a;  
+print "The value of c is ", c 
+c = a << 2;  
+print "The value of c is ", c 
+c = a >> 2;  
+print "The value of c is ", c 
+
+✔ SOLUTION: ✔
+
+a = 60  
+b = 13  
+c = 0 
+c = a & b  
+print("The value of c is ", c) 
+c = a | b 
+print("The value of c is ", c)
+c = a ^ b 
+print("The value of c is ", c) 
+c = ~a
+print("The value of c is ", c) 
+c = a << 2
+print("The value of c is ", c) 
+c = a >> 2
+print("The value of c is ", c)
+=========================================================================================
+(3)
+a = 12 
+b = 27 
+c = 0 
+if ( a == b ): 
+ print "a is equal to b" 
+else:
+print "a is not equal to b" 
+if ( a != b ): 
+ print "a is not equal to b" 
+else: 
+ print "a is equal to b" 
+if ( a <> b ): 
+ print "a is not equal to b" 
+else: 
+ print "a is equal to b" 
+if ( a < b ): 
+ print "a is less than b"  
+else: 
+ print "a is not less than b" 
+if ( a > b ): 
+ print "a is greater than b" 
+else: 
+ print "a is not greater than b" 
+a = 5; 
+b = 29; 
+if ( a <= b ): 
+ print "a is either less than or equal to b" 
+else: 
+ print "a is neither less than nor equal to b" 
+if ( b >= a ): 
+ print "b is either greater than or equal to b" 
+else: 
+ print "b is neither greater than nor equal to b" 
+
+✔ SOLUTION: ✔
+
+a = 12 
+b = 27 
+c = 0 
+if ( a == b ): 
+ print("a is equal to b") 
+else:
+   print("a is not equal to b") 
+if ( a != b ): 
+ print("a is not equal to b") 
+else: 
+ print("a is equal to b") 
+if ( a != b ): 
+ print("a is not equal to b") 
+else: 
+ print("a is equal to b") 
+if ( a < b ): 
+ print ("a is less than b")  
+else: 
+ print("a is not less than b") 
+if ( a > b ): 
+ print("a is greater than b") 
+else: 
+ print("a is not greater than b") 
+a = 5; 
+b = 29; 
+if ( a <= b ): 
+ print("a is either less than or equal to b") 
+else: 
+ print("a is neither less than nor equal to b") 
+if ( b >= a ): 
+ print("b is either greater than or equal to b") 
+else: 
+ print("b is neither greater than nor equal to b")
+=========================================================================================
+(4)
+dict = {} 
+dict['one'] = "Programming 1" 
+dict[2] = "This is Python Programming" 
+tinydict = {'student name': 'prince','code':1227, 'dept': 'cite'} 
+print dict['one']  
+print dict[2]  
+print tinydict  
+print tinydict.keys()  
+print tinydict.values()  
+
+✔ SOLUTION: ✔
+
+dict = {} 
+dict['one'] = "Programming 1" 
+dict[2] = "This is Python Programming" 
+tinydict = {'student name': 'prince','code':1227, 'dept': 'cite'} 
+print(dict['one'])  
+print(dict[2])  
+print(tinydict)  
+print(tinydict.keys())  
+print(tinydict.values()) 
+=========================================================================================
+ 

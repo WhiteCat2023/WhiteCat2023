@@ -1,0 +1,48 @@
+(1).Create a code that will accept input from the users.
+Assume that the input name is Nina and the age is 34. What is the output of the code shown below?
+print ("Please share the information asked for:\n" );
+
+SOLUTION: 
+
+name = input("ENTER A NAME: ")
+age = input("ENTER YOUR AGE: ")
+
+print("",name,"\n",str(age))
+
+RESULT:
+
+ENTER A NAME: BERNDT
+ENTER YOUR AGE: 19
+ BERNDT 
+ 19
+
+(2).Assume that the entered first number is 46 and second number is 76. What is the output of the sum of two numbers.
+
+SOLUTION: 
+
+num1 = int(input("ENTER FIRST NUMBER: "))
+num2 = int(input("ENTER SECOND NUMBER: "))
+
+sum = num1 + num2
+print(sum)
+
+RESULT:
+
+ENTER FIRST NUMBER: 1
+ENTER SECOND NUMBER: 1
+2
+
+(3).Assume that there is a list of cars brands of toyota mazda lambo suzuki tesla 
+update the list by inserting another brand and deleting one item from the list on index 2.
+
+SOLUTION: 
+
+car_list = ["TOYOTA", "MAZDA", "LAMBO", "SUZUKI", "TESLA"]
+car_list.insert(2, "MERCEDEZ BENZ")
+car_list.remove("LAMBO")
+
+print(car_list)
+
+RESULT:
+
+['TOYOTA', 'MAZDA', 'MERCEDEZ BENZ', 'SUZUKI', 'TESLA']

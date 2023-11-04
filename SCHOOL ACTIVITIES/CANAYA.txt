@@ -1,0 +1,58 @@
+Coding Time: Open your code editors like Notepad++, Sublime, or any available IDE.
+1. Using the if-else statement, create a program that will ask for a number, your program
+must tell if the number entered by the user is “POSITIVE”, or “NEGATIVE”.
+
+SOLUTION:
+
+num = int(input("ENTER A NUMBER: "))
+if num < 0:
+    print("NEGATIVE")
+else:
+    print("POSTIVE")
+====================================================================================================================
+
+2. Using the if-else statement create a program that will ask the 5 grades for 5 different subjects then get 
+the average grade base on that grade print if the grade they have is  greater than 85 print with highest honor, 
+80 higher with honor, 75 above   pass ,and 75 below fail
+example :
+output : Jimuel average: 74 fail
+
+SOLUTION:
+
+student_name = input("STUDENT NAME: ")
+
+math = int(input("ENTER YOUR MATH GRADE: "))
+english = int(input("ENTER YOUR ENGLISH GRADE: "))
+science = int(input("ENTER YOUR SCIENCE GRADE: "))
+philosophy = int(input("ENTER YOUR PHILOSOPHY GRADE: "))
+physics = int(input("ENTER YOUR PHYSICS GRADE: "))
+
+grade_average = (math + english + science + philosophy + physics)/5
+
+if grade_average >= 85:
+    print(f"{student_name} {grade_average} WITH HIGHEST HONOR")
+elif grade_average >= 80:
+    print(f"{student_name} {grade_average} WITH HONOR")
+elif grade_average >= 75:
+    print(f"{student_name} {grade_average} PASS")
+else:
+    print(f"{student_name} {grade_average} FAIL")
+
+====================================================================================================================
+
+3. Create a program that will ask the user for their username and password if the entered credentials was correct print login 
+create a variable that holds a static value for username and password .
+
+SOLUTION:
+
+user_storage = "BERNDT"
+password_storage = "123456"
+
+user1 = input("USERNAME: ")
+pasS1 = input("PASSWORD: ")
+
+if user1 == user_storage and pasS1 == password_storage:
+    print(f"WELCOME {user_storage}")
+else:
+    print("invalid user name and password")
+====================================================================================================================

@@ -1,0 +1,78 @@
+11:36 AM 9/12/2023 BERNDT DENNIS F. CANAYA BSIT-A1
+
+##1create a program for the  user where they  can input there name and age and print name and age together 
+
+SOLUTION:
+name = input("ENTER YOUR NAME: ")
+age = int(input("ENTER YOUR AGE: "))
+print(f"Hello {name} your age is {str(age)}")
+
+OUTPUT: 
+ENTER YOUR NAME: Berndt
+ENTER YOUR AGE: 19
+Hello Berndt your age is 19
+
+##2Create a program where a user can input there fname , lname , gender phoneNumber ,location . user casting to print it in one line
+
+SOLUTION:
+fName = input("ENTER YOUR FIRST NAME: ")
+lName = input("ENTER YOUR LAST NAME: ")
+gender = input("ENTER YOUR GENDER: ")
+phone_number = int(input("ENTER YOUR PHONE NUMBER: "))
+location = input("ENTER YOUR LOCATION: ")
+print(f"Hello {fName} {lName} your a {gender} and your phone number is {phone_number} and your loacation is {location} NOTE: YOU'VE BEEN TRACED THANK YOU")
+
+OUTPUT:
+ENTER YOUR FIRST NAME: Berndt
+ENTER YOUR LAST NAME: Canaya
+ENTER YOUR GENDER: Male
+ENTER YOUR PHONE NUMBER: 09561384118
+ENTER YOUR LOCATION: Cebu
+Hello Berndt Canaya your a Male and your phone number is 9561384118 and your loacation is Cebu NOTE: YOU'VE BEEN TRACED THANK YOU
+
+#3. Create a program where user input add two numbers and add them then create a result variable . for the output should look like this  1 + 1 = 2
+
+SOLUTION:
+num1 = int(input("ENTER FIRST  NUMBER >> "))
+num2 = int(input("ENTER SECOND NUMBER >>"))
+sum = num1 + num2
+print(num1, "+", num2, "=", sum)
+
+OUTPUT:
+ENTER FIRST  NUMBER >> 2
+ENTER SECOND NUMBER >>2
+2 + 2 = 4
+
+##4create a program to input and calculate grade average assuming your a teacher and you need input a student name and  grade  with 4 subject to be calculated use casting  to print the result for calculated grade with the student name
+
+SOLUTION:
+print("==============================")
+print("😎GRADING AVERAGE CALCULATOR😎")
+print("==============================")
+
+student_name = input("ENTER STUDENT NAME: ")
+english_grade = int(input("ENTER YOUR ENGLISH GRADE: "))
+math_grade = int(input("ENTER YOUR MATH GRADE: "))
+physics_grade = int(input("ENTER YOUR PHYSICS GRADE: "))
+philosophy_grade = int(input("ENTER YOUR PHILOSOPHY GRADE: "))
+average_grade = (english_grade + math_grade + physics_grade + philosophy_grade)/4
+print()
+print("==============================")
+print(f"STUDENT NAME: {student_name}")
+print(f"GRADE: {float(average_grade)}")
+print("==============================")
+
+OUTPUT:
+==============================
+😎GRADING AVERAGE CALCULATOR😎
+==============================
+ENTER STUDENT NAME: Berndt
+ENTER YOUR ENGLISH GRADE: 90
+ENTER YOUR MATH GRADE: 90
+ENTER YOUR PHYSICS GRADE: 90
+ENTER YOUR PHILOSOPHY GRADE: 99
+
+=============================
+STUDENT NAME: Berndt
+GRADE: 92.25
+=============================

@@ -1,0 +1,122 @@
+BERNDT DENNIS F. CANAYA BSIT1-A1
+
+(1) Create a program that will display 10 to 1 using a while loop.
+
+CODE:
+i = 10 
+while i != 0:
+    print(i)
+    i -= 1
+OUTPUT:
+10
+9 
+8 
+7 
+6 
+5 
+4 
+3 
+2 
+1 
+
+(2) Create a program that accepts 5 integers then computes for the sum.
+
+CODE:
+sum = 0
+attempt = 0
+while True:
+    if attempt != 5:
+        num1 = int(input("ENTER NUM: "))
+        sum += num1
+        attempt +=1
+        continue
+    else:
+        break
+   
+print(f"Total:{sum}")
+OUTPUT: 
+ENTER NUM: 5
+ENTER NUM: 5
+ENTER NUM: 5
+ENTER NUM: 5
+ENTER NUM: 5
+Total:25
+
+(3)
+Objective: Create a while loop that counts from 1 to a specified number and prints each number.
+Instructions:Ask the user to input a number.Use a while loop to count from 1 to the specified number.Inside the loop, print each number.Continue counting and printing until you reach the specified number.
+
+CODE:
+user_input = int(input("ENTER A NUMBER: "))
+
+i = 0
+
+while i != user_input:
+    print(i+1)
+    i += 1 
+OUTPUT:
+ENTER A NUMBER: 10 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+(4) 
+Objective: Use a while loop to print a message a specified number of times.
+Instructions:Ask the user to input a message and the number of times they want it to be printed.Use a while loop to print the message the specified number of times.Increment a counter variable in each iteration to keep track of how many times the message has been printed.
+Exit the loop when the counter reaches the specified number.
+
+CODE:
+user_input = str(input("ENTER YOUR MESSAGE: "))
+user_repeat_times = int(input("NUMBER OF REPETITION: "))
+
+i = 0
+
+while i != user_repeat_times:
+    print(user_input)
+    i+=1 
+    if i == user_repeat_times:
+        print(i)
+        break
+
+OUTPUT:
+ENTER YOUR MESSAGE: hi
+NUMBER OF REPETITION: 7
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+7 
+
+(5)
+Objective: Create a simple word guessing game using a while loop.
+Instructions:Choose a secret word and store it in a variable.Ask the player to guess the secret word.Use a while loop to repeatedly ask the player for their guess until they guess the correct word.Inside the loop, compare the player's guess to the secret word.
+If the guess is incorrect, print a message like "Try again."
+If the guess is correct, print a message like "Congratulations! You guessed the secret word!" and exit the loop.
+
+CODE:
+secret_word = str(input("INPUT SECRET WORD: "))
+while True:
+    user_guess = str(input("GUESS THE WORD: "))
+    if user_guess == secret_word:
+        print("Congratulations! You guessed the secret word!")
+        break
+    else:
+        print("Try again.")
+        continue
+
+OUTPUT:
+GUESS THE WORD: berndt
+Try again.      
+GUESS THE WORD: joke
+Congratulations! You guessed the secret word!
+
