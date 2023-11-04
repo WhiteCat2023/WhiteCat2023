@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      .body{
+        background-image:url('https://c.wallhere.com/photos/f4/76/city_New_York_City_black_white_building_architecture_clouds_monochrome-1694581.jpg!d');
+      }
+      
+
+      #tarea{
+        height:100px;
+        width:510px;
+        border-radius:20px;
+        background-color:lightgray;
+        
+      }
+      #description{
+        margin-left:30px;
+      }
+      #submit{
+        height:50px;
+        width:120px;
+        font-size: large ;
+        margin-top:10px;
+        background-color:lightgray;
+        border-radius:20px;
+      }
+      #submit:hover{
+        background-color:black;
+        color:white;
+
+      }
+      #title{
+        text-align:center;
+        color:#fff;
+        font-family: monospace;
+        padding-top:5%;}
+
+      #div_1{
+        margin-top:30px;
+        margin-bottom:30px;}
+
+
+      #name{
+        height: 30px;
+        width: 200px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-radius:10px;
+        margin-right:10%;
+        background-color:lightgray;
+        }
+
+      #email{
+        height: 30px;
+        width: 200px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-radius:10px;
+        background-color:lightgray;}
+        
+
+      #number{
+        margin-top:5%;
+        margin-bottom:5%;
+        margin-right:10%;
+        background-color:lightgray;
+        color:black;
+        height: 30px;
+        width:50px;
+        font-weight:400;
+        border-radius:10px;
+      }
+      .choices{
+        padding-left: 30px;
+      }
+      .body_div{
+        display:center;
+        padding-bottom:5%;
+        padding-top:5%;
+        padding-left:28%;
+        padding-right:28%;
+        background-color:black;
+        border-radius:50px;
+        color:white;
+        margin-right:100px;
+        margin-left:100px;
+        margin-bottom:100px;
+        margin-top:50px;
+        opacity:80%;
+
+      }
+      #dropdown{
+        height: 30px;
+        width:100px;
+        border-radius:10px;
+      }
+
+
+    </style>
+    <meta charset = "utf-8"
+    <link rel="stylesheet" href="styles.css">
+
+    <h1 id = "title" >FACTORS WHY SHS GRADUATES PURSUED EMPLOYMENT INSTEAD OF TERTIARY EDUCATION</h1>
+   
+    </head>
+
+    <body class="body">
+      <div class = "body_div">
+              <h3>
+        Part 1. Profile of Respondent 
+        </h3>
+
+              <div id = "div_1"> 
+                <p id = "description">Instruction: Fill in each blank with the information being asked below.</p>
+                </div>
+
+
+              <form id = "survey-form">
+
+                <div>
+                  <label id = "name-label">Name: 
+                    <input id = "name" type = "text" placeholder = "Name" required/>
+                    </label>
+
+                  <label id = "email-label">Email:   
+                    <input id = "email" type = "email" placeholder = "Email" required/>
+                    </label>
+                    <br>
+                  <label id = "number-label">Age:
+                    <input id = "number" type = "number" min = "18" max = "64" placeholder = "Age" required/>
+                    </label>
+
+                  
+                  <select id = "dropdown">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>LGBTQ</option>
+                    </select>
+                  </div>
+
+
+                  <div>
+                    <h3>
+        Part 2. Brief Interview Questions 
+        </h3>
+                    <p id = "description">Instruction: Answer each question honestly regarding the situation you have experienced</p>
+                    <p>a.	Is it hard for you to give up your college education? Why?</p>
+                    <textarea id = "tarea"></textarea>
+                    <p>b.	Does poverty a sign for you to give up college education for an employment?</p>
+                    <textarea id = "tarea"></textarea>
+                    <p>c.	What are the reasons on giving up your college education to find an employment?</p>
+                    <textarea id = "tarea"></textarea>
+                    </div>
+
+
+                <div>
+                  <h3>
+        Part 3. Likert Scale 
+        </h3>
+                  <p id = "description">Instruction: Read each statement carefully and put a checkmark (✓) on the corresponding boxes based on your opinion.<br>
+                    CONDITION: <b>1</b> – Strongly Agree     <b>2</b> – Agree     <b>3</b> – Neither Agree or Disagree    
+        <b>4</b> – Disagree     <b>5</b> – Strongly Disagree
+
+                  </p>
+                  </div>
+
+                  <div class="choices">
+                    <p>Do we have permission to ask questions<br>
+                    Yes<input name = "Yes-No" value = "Yes" type = "checkbox"/>
+                    No<input name = "Yes-No" value = "No" type = "checkbox"/></p>
+                    </div>
+
+                      <div class = "choices">
+                        <p>1.	It is hard to give up my college education. </p>
+
+                          1<input value = "1" name ="1" type = "radio"/>
+                          2<input value = "2" name ="1" type = "radio"/>
+                          3<input value = "3" name ="1" type = "radio"/>
+                          4<input value = "4" name ="1" type = "radio"/>
+                          5<input value = "5" name ="1" type = "radio"/>
+
+                        <p>2.	It is wrong to choose employment and give up my college education.  </p>
+                          1<input value = "1" name ="2" type = "radio"/>
+                          2<input value = "2" name ="2" type = "radio"/>
+                          3<input value = "3" name ="2" type = "radio"/>
+                          4<input value = "4" name ="2" type = "radio"/>
+                          5<input value = "5" name ="2" type = "radio"/>
+                        <p>3.	I choose employment instead of pursuing college education because I can’t afford my college tuition fee.   </p>
+                          1<input value = "1" name ="3" type = "radio"/>
+                          2<input value = "2" name ="3" type = "radio"/>
+                          3<input value = "3" name ="3" type = "radio"/>
+                          4<input value = "4" name ="3" type = "radio"/>
+                          5<input value = "5" name ="3" type = "radio"/>
+                        <p>4.	I gave up my college education because of my financial issues. </p>
+                          1<input value = "1" name ="4" type = "radio"/>
+                          2<input value = "2" name ="4" type = "radio"/>
+                          3<input value = "3" name ="4" type = "radio"/>
+                          4<input value = "4" name ="4" type = "radio"/>
+                          5<input value = "5" name ="4" type = "radio"/>
+                        <p>5.	I find my chosen job interesting. </p>
+                          1<input value = "1" name ="5" type = "radio"/>
+                          2<input value = "2" name ="5" type = "radio"/>
+                          3<input value = "3" name ="5" type = "radio"/>
+                          4<input value = "4" name ="5" type = "radio"/>
+                          5<input value = "5" name ="5" type = "radio"/>
+                        <p>6.	I want to pursue my college education but my parents do not want me to because of certain issue. </p>
+                          1<input value = "1" name ="6" type = "radio"/>
+                          2<input value = "2" name ="6" type = "radio"/>
+                          3<input value = "3" name ="6" type = "radio"/>
+                          4<input value = "4" name ="6" type = "radio"/>
+                          5<input value = "5" name ="6" type = "radio"/>
+                        <p>7.	I pursued employment for much better significance. </p>
+                          1<input value = "1" name ="7" type = "radio"/>
+                          2<input value = "2" name ="7" type = "radio"/>
+                          3<input value = "3" name ="7" type = "radio"/>
+                          4<input value = "4" name ="7" type = "radio"/>
+                          5<input value = "5" name ="7" type = "radio"/>
+                        <p>8.	Someone/something convinced me to choose employment over college education.  </p>
+                          1<input value = "1" name ="8" type = "radio"/>
+                          2<input value = "2" name ="8" type = "radio"/>
+                          3<input value = "3" name ="8" type = "radio"/>
+                          4<input value = "4" name ="8" type = "radio"/>
+                          5<input value = "5" name ="8" type = "radio"/>
+                        <p>9.	I was fully committed before I made my decision to pursue employment. </p>
+                          1<input value = "1" name ="9" type = "radio"/>
+                          2<input value = "2" name ="9" type = "radio"/>
+                          3<input value = "3" name ="9" type = "radio"/>
+                          4<input value = "4" name ="9" type = "radio"/>
+                          5<input value = "5" name ="9" type = "radio"/>
+                        <p>10. I tried to convince people that employment is a better option than college education.  </p>
+                          1<input value = "1" name ="10" type = "radio"/>
+                          2<input value = "2" name ="10" type = "radio"/>
+                          3<input value = "3" name ="10" type = "radio"/>
+                          4<input value = "4" name ="10" type = "radio"/>
+                          5<input value = "5" name ="10" type = "radio"/>
+                        <p>11.	 I want to continue studying if given the chance.  </p>
+                          1<input value = "1" name ="11" type = "radio"/>
+                          2<input value = "2" name ="11" type = "radio"/>
+                          3<input value = "3" name ="11" type = "radio"/>
+                          4<input value = "4" name ="11" type = "radio"/>
+                          5<input value = "5" name ="11" type = "radio"/>
+                        <p>12.	 I can’t do studying and work at the same time. </p>
+                          1<input value = "1" name ="12" type = "radio"/>
+                          2<input value = "2" name ="12" type = "radio"/>
+                          3<input value = "3" name ="12" type = "radio"/>
+                          4<input value = "4" name ="12" type = "radio"/>
+                          5<input value = "5" name ="12" type = "radio"/>
+                        <p>13.	 Payments that are needed for my college education will only add up to my expenses.  </p>
+                          1<input value = "1" name ="13" type = "radio"/>
+                          2<input value = "2" name ="13" type = "radio"/>
+                          3<input value = "3" name ="13" type = "radio"/>
+                          4<input value = "4" name ="13" type = "radio"/>
+                          5<input value = "5" name ="13" type = "radio"/>
+                        <p>14.	 I choose employment because I don’t want to be financially dependent on my parents.   </p>
+                          1<input value = "1" name ="14" type = "radio"/>
+                          2<input value = "2" name ="14" type = "radio"/>
+                          3<input value = "3" name ="14" type = "radio"/>
+                          4<input value = "4" name ="14" type = "radio"/>
+                          5<input value = "5" name ="14" type = "radio"/>
+                        <p>15.	 I choose employment over pursuing college education because I don’t have a choice.    </p>
+                          1<input value = "1" name ="15" type = "radio"/>
+                          2<input value = "2" name ="15" type = "radio"/>
+                          3<input value = "3" name ="15" type = "radio"/>
+                          4<input value = "4" name ="15" type = "radio"/>
+                          5<input value = "5" name ="15" type = "radio"/>
+
+                      </div><br>
+                      
+                      
+                  <div>
+        <h4>MESSAGE: </h4>
+                <textarea id = "tarea"></textarea>
+                <br>
+                <button id = "submit">SUBMIT</button>
+</div>
+        </form>
+</div>
+      </body>
+  </html>
