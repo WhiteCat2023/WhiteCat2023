@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter.ttk import *
-
+#BERNDT DENNIS FABIAN CANAYA BSIT-A1
 from time import strftime
 
 root = Tk()
