@@ -1,5 +1,5 @@
 import java.util.*;
-
+//BERNDT DENNIS FABIAN CANAYA BSIT-A1
 public class loan_calculator {
     public static void main(String args[])  {
   
