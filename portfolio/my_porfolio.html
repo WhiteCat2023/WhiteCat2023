@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Berndt Dennis F. Canaya</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="my_portfolio.css"/>
+    </head>
+    <body >
+        <div>
+            <video autoplay loop muted class="back-video">
+                <source src="forrest2.mp4" type="video/mp4"/>
+            </video>
+            <div class="nav_background">
+                <ul class="nav">
+                        <li><a onclick="animate(this)" href="#">HOME</a></li>
+                        <li><a onclick="animate(this)" href="#">WHO IS BERNDT?</a></li>
+                        <li><a onclick="animate(this)" href="#">PROJECTS</a></li>
+                        <li><a onclick="animate(this)" href="#">ABOUT</a></li>
+                        </ul>
+                    </div>
+        </div>
 
+        
+        
+                <script>
+                    function animate(element) {
+                        element.style.transform = 'scale(1.2)';
+                        setTimeout(function() {
+                            element.style.transform = 'scale(1)';
+                        }, 200);
+                    }
+                </script>
+        
+
+
+        
+
+
+    </body>
+</html>
