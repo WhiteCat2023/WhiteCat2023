@@ -1,7 +1,4 @@
-- 👋 Hi, I’m @WhiteCat2023
-- 👀 I’m interested in HACKING AND CODING
-- 🌱 I’m currently learning HACKING AND PYTHON(ETHICAL HACKING)
-- 💞️ I’m looking to collaborate on PYTHON PROJECTS AND HACKING INFITRATIONS(ETHICAL HACKING)
+Im whitecat ang this are my projects.
   
 
 <!---
