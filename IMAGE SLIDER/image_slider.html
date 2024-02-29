@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>IMAGE SLIDER</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+.stories-container{
+    max-width: 520px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e4e4e4;
+    border-radius: 20px;
+}
+
+.previous-btn,
+.next-btn {
+    width: 40px;
+    background: #444;
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px;
+    display: flex;
+    cursor: pointer;
+    margin: 10px;
+}
+.story{
+    height: 180px;
+    width: 120px;
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid #888888;
+}
+.story img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.stories{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: fit-content;
+}
+.content {
+    scroll-behavior: smooth;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.content::-webkit-scrollbar {
+    display: none;
+}
+.author {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #b4b4b4;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    align-items: center;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    font-size: 60px;
+}
+</style>
+<body>
+    <div class="main">
+        <h1>IMAGE SLIDER</h1>
+        <div class="stories-container">
+            <div class="previous-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                  </svg>              
+            </div>
+            <div class="content">
+                 <div class="stories">
+                    <div class="story">
+                        <img src="basdaku 2.jpg" alt=""/>
+                        <div class="author">Anonymous1</div>
+                    </div>
+                    <div class="story">
+                        <img src="basdaku 2.png" alt=""/>
+                        <div class="author">Anonymous1</div>
+                    </div>
+                    <div class="story">
+                        <img src="basdaku.jpg" alt=""/>
+                        <div class="author">Anonymous1</div>
+                    </div>
+                    <div class="story">
+                        <img src="basdaku.png" alt=""/>
+                        <div class="author">Anonymous1</div>
+                    </div>
+                    <div class="story">
+                        <img src="crimson.jpg" alt=""/>
+                        <div class="author">Anonymous1</div>
+                    </div>
+                    <div class="story">
+                        <img src="crimson.png" alt=""/>
+                        <div class="author">Anonymous1</div>
+                    </div>
+                    <div class="story">
+                        <img src="magellan_cross.jpg" alt=""/>
+                        <div class="author">Anonymous1</div>
+                    </div>
+                    <div class="story">
+                        <img src="temple_leah.png" alt=""/>
+                        <div class="author">Anonymous1</div>
+                    </div>
+                    <div class="story">
+                        <img src="basdaku 2.jpg" alt=""/>
+                        <div class="author">Anonymous1</div>
+                    </div>
+                    <div class="story">
+                        <img src="basdaku 2.png" alt=""/>
+                        <div class="author">Anonymous1</div>
+                    </div>
+                    <div class="story">
+                        <img src="basdaku.jpg" alt=""/>
+                        <div class="author">Anonymous1</div>
+                    </div>
+                    <div class="story">
+                        <img src="basdaku.png" alt=""/>
+                        <div class="author">Anonymous1</div>
+                    </div>
+                 </div>
+            </div>
+            <div class="next-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>              
+            </div>
+         </div>
+    </div>
+ 
+ <script>
+    const nextBtn = document.querySelector(".next-btn");
+    const previousBtn = document.querySelector(".previous-btn");
+    const storiesContent = document.querySelector(".content");
+
+    nextBtn.addEventListener("click", () => {
+        storiesContent.scrollLeft += 300;
+    });
+
+    previousBtn.addEventListener("click", () => {
+        storiesContent.scrollLeft += -300;
+    });
+ </script>
+</body>
